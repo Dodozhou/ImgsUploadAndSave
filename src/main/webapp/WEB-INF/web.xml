@@ -1,0 +1,18 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>RecieveServlet</servlet-name>
+    <description>这是测试多文件上传和存储的servlet实例</description>
+    <servlet-class>com.star.servlet.RecieveServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RecieveServlet</servlet-name>
+    <url-pattern>/file_upload</url-pattern>
+  </servlet-mapping>
+</web-app>

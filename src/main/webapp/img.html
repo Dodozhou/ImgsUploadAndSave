@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<div align="center">
+<label for="file"><img src="images/upload.jpg" height="40px" width="80px"></label>
+<input type="file" id="file" name="" style="display: none"/>
+<div id="image" style="width:100px;height:100px; background:#CCCCCC; ">
+    <img src="" height="100px" width="100px" border="5px"/>
+</div>
+</div>
+</body>
+<script>
+    document.getElementById('file').onchange = function() {
+        var imgFile = this.files[0];
+        var fr = new FileReader();
+        fr.onload = function() {
+            document.getElementById('image').getElementsByTagName('img')[0].src = fr.result;
+        };
+        fr.readAsDataURL(imgFile);
+    };
+</script>
+
+</html>

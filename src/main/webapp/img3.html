@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>图片上传——www.aa25.cn</title>
+    <script>
+        function viewmypic(mypic,imgfile) {
+            if (imgfile.value){
+                mypic.src=imgfile.value;
+                mypic.style.display="";
+                mypic.border=1;
+            }
+        }
+    </script>
+</head>
+<body>
+<center>
+    <form >
+        <input name="imgfile" type="file" id="imgfile" size="40" onchange="viewmypic(showimg,this.form.imgfile);" />
+        <br />
+    </form>
+    <img name="showimg" id="showimg" src="" style="display:none;" alt="预览图片——www.aa25.cn" />
+    <br />
+    </div>
+    <div style="display:none">
+    </div>
+</center>
+</body>
+</html>
+
